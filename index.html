@@ -13,7 +13,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
             --primary-gold: #c9a96e;
             --secondary-gold: #b8941f;
@@ -30,7 +29,6 @@
             --light-text: #333333;
             --light-card: #ffffff;
         }
-
         [data-theme="light"] {
             --dark-bg: #ffffff;
             --darker-bg: #f8f9fa;
@@ -40,7 +38,6 @@
             --text-muted: #6a6a6a;
             --border-color: rgba(201, 169, 110, 0.25);
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--dark-bg);
@@ -49,11 +46,9 @@
             overflow-x: hidden;
             transition: all 0.3s ease;
         }
-
         .heading-font {
             font-family: 'Playfair Display', serif;
         }
-
         /* Header */
         .header {
             position: fixed;
@@ -66,11 +61,9 @@
             transition: all 0.3s ease;
             border-bottom: 1px solid var(--border-color);
         }
-
         [data-theme="light"] .header {
             background: rgba(255, 255, 255, 0.97);
         }
-
         .nav-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -79,7 +72,6 @@
             align-items: center;
             padding: 0 3rem;
         }
-
         .logo {
             display: flex;
             align-items: center;
@@ -88,37 +80,31 @@
             color: var(--primary-gold);
             text-decoration: none;
         }
-
         .logo i {
             margin-right: 0.7rem;
             font-size: 2rem;
         }
-
         .logo-text {
             display: flex;
             flex-direction: column;
             line-height: 1.2;
         }
-
         .logo-main {
             font-family: 'Playfair Display', serif;
             font-size: 1.4rem;
             font-weight: 600;
         }
-
         .logo-sub {
             font-size: 0.8rem;
             color: var(--text-secondary);
             letter-spacing: 1px;
             text-transform: uppercase;
         }
-
         .nav-menu {
             display: flex;
             list-style: none;
             gap: 2.5rem;
         }
-
         .nav-menu a {
             color: var(--text-primary);
             text-decoration: none;
@@ -129,11 +115,9 @@
             position: relative;
             text-transform: uppercase;
         }
-
         .nav-menu a:hover {
             color: var(--primary-gold);
         }
-
         .nav-menu a::after {
             content: '';
             position: absolute;
@@ -145,17 +129,14 @@
             transition: all 0.3s ease;
             transform: translateX(-50%);
         }
-
         .nav-menu a:hover::after {
             width: 100%;
         }
-
         .header-actions {
             display: flex;
             align-items: center;
             gap: 1.5rem;
         }
-
         .theme-toggle {
             background: var(--card-bg);
             border: 2px solid var(--border-color);
@@ -166,7 +147,6 @@
             position: relative;
             transition: all 0.3s ease;
         }
-
         .theme-toggle::before {
             content: '';
             position: absolute;
@@ -178,11 +158,9 @@
             border-radius: 50%;
             transition: transform 0.3s ease;
         }
-
         [data-theme="light"] .theme-toggle::before {
             transform: translateX(22px);
         }
-
         .cta-header {
             background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold));
             color: var(--darker-bg);
@@ -195,12 +173,10 @@
             transition: all 0.3s ease;
             text-transform: uppercase;
         }
-
         .cta-header:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(201, 169, 110, 0.4);
         }
-
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -209,7 +185,6 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-
         /* Hero Section */
         .hero {
             height: 100vh;
@@ -221,7 +196,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .hero::before {
             content: '';
             position: absolute;
@@ -232,14 +206,12 @@
             background: radial-gradient(circle at 50% 50%, rgba(201, 169, 110, 0.1) 0%, transparent 70%);
             z-index: 1;
         }
-
         .hero-content {
             max-width: 900px;
             z-index: 2;
             position: relative;
             padding: 0 2rem;
         }
-
         .hero-badge {
             display: inline-block;
             background: rgba(201, 169, 110, 0.1);
@@ -253,19 +225,16 @@
             text-transform: uppercase;
             margin-bottom: 2rem;
         }
-
         .crown-icon {
             font-size: 3.5rem;
             color: var(--primary-gold);
             margin-bottom: 1.5rem;
             animation: float 4s ease-in-out infinite;
         }
-
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-8px); }
         }
-
         .hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: 4rem;
@@ -277,7 +246,6 @@
             background-clip: text;
             line-height: 1.2;
         }
-
         .hero-subtitle {
             font-size: 1.3rem;
             margin-bottom: 1rem;
@@ -286,8 +254,8 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            font-family: 'Inter', sans-serif;
         }
-
         .hero-features {
             display: flex;
             justify-content: center;
@@ -295,7 +263,6 @@
             margin-bottom: 3rem;
             flex-wrap: wrap;
         }
-
         .hero-feature {
             display: flex;
             align-items: center;
@@ -303,19 +270,16 @@
             font-size: 0.95rem;
             font-weight: 500;
         }
-
         .hero-feature i {
             color: var(--primary-gold);
             margin-right: 0.5rem;
         }
-
         .cta-buttons {
             display: flex;
             gap: 1.5rem;
             justify-content: center;
             flex-wrap: wrap;
         }
-
         .btn {
             padding: 14px 32px;
             border: none;
@@ -330,29 +294,24 @@
             text-transform: uppercase;
             font-family: 'Inter', sans-serif;
         }
-
         .btn-primary {
             background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold));
             color: var(--darker-bg);
         }
-
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 12px 30px rgba(201, 169, 110, 0.4);
         }
-
         .btn-secondary {
             background: transparent;
             color: var(--text-primary);
             border: 2px solid var(--primary-gold);
         }
-
         .btn-secondary:hover {
             background: var(--primary-gold);
             color: var(--darker-bg);
             transform: translateY(-3px);
         }
-
         /* Trust Indicators */
         .trust-section {
             padding: 80px 0;
@@ -360,7 +319,6 @@
             border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
         }
-
         .trust-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -370,11 +328,9 @@
             padding: 0 3rem;
             text-align: center;
         }
-
         .trust-item {
             padding: 1.5rem;
         }
-
         .trust-number {
             font-family: 'Playfair Display', serif;
             font-size: 3rem;
@@ -382,7 +338,6 @@
             color: var(--primary-gold);
             margin-bottom: 0.5rem;
         }
-
         .trust-label {
             font-size: 0.95rem;
             color: var(--text-secondary);
@@ -390,24 +345,20 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-
         /* Services Section */
         .services {
             padding: 120px 0;
             background: var(--dark-bg);
         }
-
         .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 3rem;
         }
-
         .section-header {
             text-align: center;
             margin-bottom: 5rem;
         }
-
         .section-badge {
             display: inline-block;
             background: rgba(201, 169, 110, 0.1);
@@ -421,7 +372,6 @@
             text-transform: uppercase;
             margin-bottom: 1.5rem;
         }
-
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 3rem;
@@ -430,7 +380,6 @@
             color: var(--text-primary);
             line-height: 1.2;
         }
-
         .section-subtitle {
             font-size: 1.2rem;
             color: var(--text-secondary);
@@ -438,13 +387,11 @@
             margin: 0 auto;
             line-height: 1.6;
         }
-
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: 2.5rem;
         }
-
         .service-card {
             background: var(--card-bg);
             padding: 3rem 2.5rem;
@@ -454,7 +401,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .service-card::before {
             content: '';
             position: absolute;
@@ -465,31 +411,28 @@
             background: linear-gradient(90deg, var(--primary-gold), var(--secondary-gold));
             transform: scaleX(0);
             transition: transform 0.4s ease;
+            z-index: 1;
         }
-
         .service-card:hover::before {
             transform: scaleX(1);
         }
-
         .service-card:hover {
             transform: translateY(-8px);
             border-color: var(--primary-gold);
             background: linear-gradient(135deg, var(--card-bg) 0%, rgba(201, 169, 110, 0.05) 100%);
         }
-
         .service-header {
             display: flex;
             align-items: flex-start;
             margin-bottom: 2rem;
         }
-
         .service-icon {
             font-size: 2.5rem;
             color: var(--primary-gold);
             margin-right: 1.5rem;
             margin-top: 0.5rem;
+            flex-shrink: 0;
         }
-
         .service-info h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.6rem;
@@ -497,7 +440,6 @@
             margin-bottom: 0.5rem;
             color: var(--text-primary);
         }
-
         .service-category {
             font-size: 0.85rem;
             color: var(--primary-gold);
@@ -505,17 +447,14 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-
         .service-description {
             color: var(--text-secondary);
             line-height: 1.7;
             margin-bottom: 2rem;
         }
-
         .service-features {
             list-style: none;
         }
-
         .service-features li {
             display: flex;
             align-items: center;
@@ -523,28 +462,192 @@
             color: var(--text-secondary);
             font-size: 0.95rem;
         }
-
         .service-features i {
             color: var(--primary-gold);
             margin-right: 0.8rem;
             font-size: 0.8rem;
         }
 
+        /* NEW FLAVOUR SECTION DESIGN */
+        .flavours {
+            padding: 120px 0;
+            background: var(--card-bg);
+            position: relative;
+            overflow: hidden;
+        }
+        .flavours::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+        }
+        .flavour-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .flavour-tab {
+            padding: 12px 24px;
+            background: var(--dark-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .flavour-tab.active {
+            background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold));
+            color: var(--darker-bg);
+            border-color: var(--primary-gold);
+            box-shadow: 0 5px 15px rgba(201, 169, 110, 0.2);
+        }
+        .flavour-tab:hover:not(.active) {
+            border-color: var(--primary-gold);
+            color: var(--primary-gold);
+        }
+        .flavour-content {
+            display: none;
+        }
+        .flavour-content.active {
+            display: block;
+        }
+        .flavour-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .flavour-card {
+            background: var(--dark-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .flavour-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-gold);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        .flavour-card-header {
+            padding: 1.5rem;
+            background: linear-gradient(45deg, rgba(201, 169, 110, 0.1), transparent);
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .flavour-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: var(--darker-bg);
+        }
+        .flavour-card-body {
+            padding: 1.5rem;
+        }
+        .flavour-card-body h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        .flavour-card-body p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        .flavour-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+        .flavour-popularity {
+            display: flex;
+            align-items: center;
+            color: var(--primary-gold);
+            font-size: 0.9rem;
+        }
+        .flavour-popularity i {
+            margin-right: 0.3rem;
+        }
+        .flavour-tag {
+            background: rgba(201, 169, 110, 0.1);
+            color: var(--primary-gold);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .flavour-category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin: 4rem 0 2rem;
+            color: var(--primary-gold);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .flavour-category-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: var(--primary-gold);
+        }
+        .flavour-note {
+            display: flex;
+            align-items: center;
+            background: var(--dark-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+        .note-icon {
+            font-size: 2rem;
+            color: var(--primary-gold);
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        .flavour-note p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
         /* Package Section */
         .packages {
             padding: 120px 0;
-            background: var(--card-bg);
+            background: var(--dark-bg);
         }
-
         .packages-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 3rem;
             margin-top: 4rem;
         }
-
         .package-card {
-            background: var(--dark-bg);
+            background: var(--card-bg);
             padding: 3rem 2.5rem;
             border-radius: 12px;
             border: 1px solid var(--border-color);
@@ -552,12 +655,10 @@
             position: relative;
             transition: all 0.4s ease;
         }
-
         .package-card.featured {
             border-color: var(--primary-gold);
             transform: scale(1.05);
         }
-
         .package-card.featured::before {
             content: 'Most Popular';
             position: absolute;
@@ -573,7 +674,6 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-
         .package-name {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
@@ -581,18 +681,15 @@
             margin-bottom: 1rem;
             color: var(--text-primary);
         }
-
         .package-price {
             font-size: 0.95rem;
             color: var(--text-secondary);
             margin-bottom: 2rem;
         }
-
         .package-features {
             list-style: none;
             margin-bottom: 2.5rem;
         }
-
         .package-features li {
             display: flex;
             align-items: center;
@@ -600,34 +697,29 @@
             margin-bottom: 1rem;
             color: var(--text-secondary);
         }
-
         .package-features i {
             color: var(--primary-gold);
             margin-right: 0.8rem;
             font-size: 0.8rem;
         }
-
         /* Testimonials */
         .testimonials {
             padding: 120px 0;
-            background: var(--dark-bg);
+            background: var(--card-bg);
         }
-
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 3rem;
             margin-top: 4rem;
         }
-
         .testimonial-card {
-            background: var(--card-bg);
+            background: var(--dark-bg);
             padding: 3rem 2.5rem;
             border-radius: 12px;
             border: 1px solid var(--border-color);
             position: relative;
         }
-
         .testimonial-quote {
             font-size: 1.1rem;
             line-height: 1.7;
@@ -635,35 +727,29 @@
             margin-bottom: 2rem;
             font-style: italic;
         }
-
         .testimonial-author {
             display: flex;
             align-items: center;
         }
-
         .author-info h4 {
             color: var(--text-primary);
             font-weight: 600;
             margin-bottom: 0.3rem;
         }
-
         .author-info p {
             color: var(--text-muted);
             font-size: 0.9rem;
         }
-
         .testimonial-rating {
             color: var(--primary-gold);
             font-size: 1.2rem;
             margin-left: auto;
         }
-
         /* Contact Section */
         .contact {
             padding: 120px 0;
-            background: var(--card-bg);
+            background: var(--dark-bg);
         }
-
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -671,58 +757,50 @@
             align-items: start;
             margin-top: 4rem;
         }
-
         .contact-info {
             padding-right: 2rem;
         }
-
         .contact-item {
             display: flex;
             align-items: flex-start;
             margin-bottom: 3rem;
             padding: 2rem;
-            background: var(--dark-bg);
+            background: var(--card-bg);
             border-radius: 12px;
             border: 1px solid var(--border-color);
             transition: all 0.3s ease;
         }
-
         .contact-item:hover {
             transform: translateX(8px);
             border-color: var(--primary-gold);
         }
-
         .contact-item i {
             font-size: 1.5rem;
             color: var(--primary-gold);
             margin-right: 1.5rem;
             margin-top: 0.3rem;
             width: 25px;
+            flex-shrink: 0;
         }
-
         .contact-details h4 {
             color: var(--text-primary);
             font-weight: 600;
             margin-bottom: 0.5rem;
             font-size: 1.1rem;
         }
-
         .contact-details p {
             color: var(--text-secondary);
             line-height: 1.6;
         }
-
         .contact-form {
-            background: var(--dark-bg);
+            background: var(--card-bg);
             padding: 3rem;
             border-radius: 12px;
             border: 1px solid var(--border-color);
         }
-
         .form-group {
             margin-bottom: 2rem;
         }
-
         .form-group label {
             display: block;
             margin-bottom: 0.8rem;
@@ -730,7 +808,6 @@
             font-weight: 500;
             font-size: 0.95rem;
         }
-
         .form-group input,
         .form-group select,
         .form-group textarea {
@@ -738,50 +815,43 @@
             padding: 14px 16px;
             border: 2px solid var(--border-color);
             border-radius: 8px;
-            background: var(--card-bg);
+            background: var(--dark-bg);
             color: var(--text-primary);
             font-size: 1rem;
             font-family: 'Inter', sans-serif;
             transition: all 0.3s ease;
         }
-
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: var(--primary-gold);
-            background: var(--dark-bg);
+            background: var(--card-bg);
         }
-
         .form-group textarea {
             resize: vertical;
             min-height: 120px;
         }
-
         .form-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
         }
-
         /* Footer */
         .footer {
             background: var(--darker-bg);
             padding: 4rem 0 2rem;
             border-top: 1px solid var(--border-color);
         }
-
         .footer-content {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 3rem;
             margin-bottom: 3rem;
         }
-
         .footer-brand {
             max-width: 350px;
         }
-
         .footer-logo {
             display: flex;
             align-items: center;
@@ -790,48 +860,39 @@
             font-size: 1.4rem;
             font-weight: 600;
         }
-
         .footer-logo i {
             margin-right: 0.8rem;
             font-size: 1.8rem;
         }
-
         .footer-description {
             color: var(--text-secondary);
             line-height: 1.7;
             margin-bottom: 2rem;
         }
-
         .footer-section h4 {
             color: var(--text-primary);
             font-weight: 600;
             margin-bottom: 1.5rem;
             font-size: 1.1rem;
         }
-
         .footer-links {
             list-style: none;
         }
-
         .footer-links li {
             margin-bottom: 0.8rem;
         }
-
         .footer-links a {
             color: var(--text-secondary);
             text-decoration: none;
             transition: color 0.3s ease;
         }
-
         .footer-links a:hover {
             color: var(--primary-gold);
         }
-
         .social-links {
             display: flex;
             gap: 1rem;
         }
-
         .social-links a {
             display: flex;
             align-items: center;
@@ -844,13 +905,11 @@
             transition: all 0.3s ease;
             border: 1px solid var(--border-color);
         }
-
         .social-links a:hover {
             background: var(--primary-gold);
             color: var(--darker-bg);
             transform: translateY(-2px);
         }
-
         .footer-bottom {
             padding-top: 2rem;
             border-top: 1px solid var(--border-color);
@@ -858,19 +917,25 @@
             color: var(--text-muted);
             font-size: 0.9rem;
         }
-
         /* Responsive Design */
         @media (max-width: 1200px) {
             .nav-container,
             .container {
                 padding: 0 2rem;
             }
-
             .hero h1 {
                 font-size: 3.5rem;
             }
         }
-
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+            .flavour-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+        }
         @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
@@ -886,84 +951,86 @@
                 transition: left 0.3s ease;
                 border-top: 1px solid var(--border-color);
             }
-
             .nav-menu.active {
                 left: 0;
             }
-
             .mobile-menu-btn {
                 display: block;
             }
-
             .cta-header {
                 display: none;
             }
-
             .hero h1 {
                 font-size: 2.8rem;
             }
-
             .hero-features {
                 flex-direction: column;
                 gap: 1rem;
             }
-
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-
             .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 3rem;
             }
-
             .contact-info {
                 padding-right: 0;
             }
-
             .form-row {
                 grid-template-columns: 1fr;
             }
-
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-
             .trust-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 2rem;
             }
-
             .services-grid,
             .packages-grid,
             .testimonials-grid {
                 grid-template-columns: 1fr;
             }
-
+            .flavour-grid {
+                grid-template-columns: 1fr;
+            }
             .section-title {
                 font-size: 2.5rem;
             }
-
             .nav-container,
             .container {
                 padding: 0 1.5rem;
             }
+            .flavour-note {
+                flex-direction: column;
+                text-align: center;
+            }
+            .note-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            .flavour-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            .flavour-tab {
+                width: 200px;
+                text-align: center;
+            }
         }
-
         /* Scroll animations */
         .fade-in {
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.8s ease;
         }
-
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
-
         /* Loading animation */
         .loading {
             position: fixed;
@@ -978,12 +1045,11 @@
             z-index: 9999;
             transition: opacity 0.5s ease;
         }
-
         .loading.hidden {
             opacity: 0;
             pointer-events: none;
+            display: none;
         }
-
         .loader {
             width: 60px;
             height: 60px;
@@ -992,26 +1058,21 @@
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
-
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
-
         ::-webkit-scrollbar-track {
             background: var(--card-bg);
         }
-
         ::-webkit-scrollbar-thumb {
             background: var(--primary-gold);
             border-radius: 4px;
         }
-
         ::-webkit-scrollbar-thumb:hover {
             background: var(--secondary-gold);
         }
@@ -1022,7 +1083,6 @@
     <div class="loading" id="loading">
         <div class="loader"></div>
     </div>
-
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
@@ -1036,6 +1096,7 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#flavours">Flavours</a></li>
                 <li><a href="#packages">Packages</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -1049,7 +1110,6 @@
             </button>
         </nav>
     </header>
-
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content fade-in">
@@ -1059,7 +1119,6 @@
             </div>
             <h1>Crown Shisha Catering</h1>
             <p class="hero-subtitle">Professional shisha catering services for corporate events, weddings, and private functions throughout Toronto GTA.</p>
-            
             <div class="hero-features">
                 <div class="hero-feature">
                     <i class="fas fa-shield-alt"></i>
@@ -1074,14 +1133,12 @@
                     <span>24/7 Service</span>
                 </div>
             </div>
-            
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-primary">Request Consultation</a>
                 <a href="#services" class="btn btn-secondary">View Services</a>
             </div>
         </div>
     </section>
-
     <!-- Trust Indicators -->
     <section class="trust-section">
         <div class="trust-grid fade-in">
@@ -1103,7 +1160,6 @@
             </div>
         </div>
     </section>
-
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
@@ -1112,7 +1168,6 @@
                 <h2 class="section-title">Professional Catering Services</h2>
                 <p class="section-subtitle">Comprehensive shisha catering solutions tailored to your event requirements with the highest standards of service and quality.</p>
             </div>
-            
             <div class="services-grid">
                 <div class="service-card fade-in">
                     <div class="service-header">
@@ -1132,7 +1187,6 @@
                         <li><i class="fas fa-check"></i>Flexible service packages</li>
                     </ul>
                 </div>
-
                 <div class="service-card fade-in">
                     <div class="service-header">
                         <div class="service-icon">
@@ -1151,7 +1205,6 @@
                         <li><i class="fas fa-check"></i>Photography-friendly designs</li>
                     </ul>
                 </div>
-
                 <div class="service-card fade-in">
                     <div class="service-header">
                         <div class="service-icon">
@@ -1170,7 +1223,6 @@
                         <li><i class="fas fa-check"></i>Guest capacity management</li>
                     </ul>
                 </div>
-
                 <div class="service-card fade-in">
                     <div class="service-header">
                         <div class="service-icon">
@@ -1192,8 +1244,276 @@
             </div>
         </div>
     </section>
-
-    <!-- Packages Section -->
+    <!-- NEW FLAVOUR SECTION -->
+    <section class="flavours" id="flavours">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">Curated Collection</div>
+                <h2 class="section-title">Artisanal Flavour Experience</h2>
+                <p class="section-subtitle">Indulge in our meticulously curated selection of premium shisha flavours, expertly crafted to elevate your event experience with sophistication and refinement.</p>
+            </div>
+            
+            <div class="flavour-tabs fade-in">
+                <div class="flavour-tab active" data-category="fruity">Fruity Elegance</div>
+                <div class="flavour-tab" data-category="mint">Mint & Fresh</div>
+                <div class="flavour-tab" data-category="specialty">Specialty Blends</div>
+            </div>
+            
+            <!-- Fruity Elegance Category -->
+            <div class="flavour-content active" id="fruity-content">
+                <h3 class="flavour-category-title">Fruity Elegance Collection</h3>
+                <div class="flavour-grid">
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                            <h4>Double Apple Reserve</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Our signature blend featuring premium Lebanese apples with a perfect balance of sweet and tart notes that delivers a consistently smooth, sophisticated experience.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Best Seller</span>
+                                </div>
+                                <div class="flavour-tag">Fruity</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-grapes"></i>
+                            </div>
+                            <h4>Purple Majesty Grape</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Rich, velvety grape essence with subtle floral undertones that creates a luxurious smoking experience with exceptional depth and character.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Popular</span>
+                                </div>
+                                <div class="flavour-tag">Fruity</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-watermelon"></i>
+                            </div>
+                            <h4>Summer Harvest Watermelon</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Crisp, refreshing watermelon with delicate sweetness that captures the essence of a perfect summer day—ideal for warm-weather gatherings.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Seasonal</span>
+                                </div>
+                                <div class="flavour-tag">Fruity</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-lemon"></i>
+                            </div>
+                            <h4>Lemon Zest Mint</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Vibrant lemon peel blended with premium spearmint for a refreshingly sophisticated experience that cleanses the palate with each draw.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Refreshing</span>
+                                </div>
+                                <div class="flavour-tag">Fruity & Mint</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-citrus"></i>
+                            </div>
+                            <h4>Citrus Symphony</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>A harmonious blend of blood orange, tangerine, and bergamot that creates a complex, multi-layered citrus experience with perfect balance.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Exclusive</span>
+                                </div>
+                                <div class="flavour-tag">Fruity</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-kiwi-bird"></i>
+                            </div>
+                            <h4>Tropical Kiwi</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Exotic New Zealand kiwi with subtle hints of passion fruit that delivers a uniquely refreshing experience with sophisticated complexity.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Exotic</span>
+                                </div>
+                                <div class="flavour-tag">Fruity</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mint & Fresh Category -->
+            <div class="flavour-content" id="mint-content">
+                <h3 class="flavour-category-title">Mint & Fresh Collection</h3>
+                <div class="flavour-grid">
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <h4>Premium Gum Mint</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Our most requested mint blend featuring a perfect balance of bubblegum sweetness and cooling mint that appeals to all palates with its nostalgic charm.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Top Seller</span>
+                                </div>
+                                <div class="flavour-tag">Mint</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-mint"></i>
+                            </div>
+                            <h4>Pure Spearmint Reserve</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Single-origin spearmint with exceptional clarity and cooling properties that provides a clean, refreshing experience without overpowering sweetness.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Classic</span>
+                                </div>
+                                <div class="flavour-tag">Mint</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h4>Lime & Eucalyptus</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Vibrant Key limes blended with subtle eucalyptus notes for a uniquely refreshing experience that invigorates the senses with each draw.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Invigorating</span>
+                                </div>
+                                <div class="flavour-tag">Mint & Citrus</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Specialty Blends Category -->
+            <div class="flavour-content" id="specialty-content">
+                <h3 class="flavour-category-title">Specialty Blends</h3>
+                <div class="flavour-grid">
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Luxury Rose 66</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Our exclusive blend featuring premium Bulgarian rose petals with subtle hints of pomegranate and vanilla—a sophisticated choice for discerning palates.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Exclusive</span>
+                                </div>
+                                <div class="flavour-tag">Floral</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h4>Signature Lady Killer</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>Our most requested specialty blend—a sophisticated fusion of jasmine, lychee, and creamy coconut that consistently delights even the most discerning guests.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Signature</span>
+                                </div>
+                                <div class="flavour-tag">Specialty</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flavour-card fade-in">
+                        <div class="flavour-card-header">
+                            <div class="flavour-icon">
+                                <i class="fas fa-clover"></i>
+                            </div>
+                            <h4>Traditional Pan</h4>
+                        </div>
+                        <div class="flavour-card-body">
+                            <p>An authentic recreation of the classic Middle Eastern blend with subtle tobacco notes and delicate floral undertones—a nod to shisha heritage.</p>
+                            <div class="flavour-meta">
+                                <div class="flavour-popularity">
+                                    <i class="fas fa-star"></i>
+                                    <span>Traditional</span>
+                                </div>
+                                <div class="flavour-tag">Classic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flavour-note fade-in">
+                <div class="note-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <p>Each flavour in our collection is meticulously selected from premium international suppliers and expertly prepared to ensure consistent quality. Our exclusive blends are available only through Crown Shisha Catering. Contact us for seasonal specials and custom flavor combinations tailored to your event theme.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Package Section -->
     <section class="packages" id="packages">
         <div class="container">
             <div class="section-header fade-in">
@@ -1201,7 +1521,6 @@
                 <h2 class="section-title">Professional Service Packages</h2>
                 <p class="section-subtitle">Choose from our carefully crafted service packages designed to meet various event requirements and budgets.</p>
             </div>
-            
             <div class="packages-grid">
                 <div class="package-card fade-in">
                     <h3 class="package-name">Essential</h3>
@@ -1216,7 +1535,6 @@
                     </ul>
                     <a href="#contact" class="btn btn-secondary">Get Quote</a>
                 </div>
-
                 <div class="package-card featured fade-in">
                     <h3 class="package-name">Premium</h3>
                     <div class="package-price">Ideal for special celebrations</div>
@@ -1231,7 +1549,6 @@
                     </ul>
                     <a href="#contact" class="btn btn-primary">Get Quote</a>
                 </div>
-
                 <div class="package-card fade-in">
                     <h3 class="package-name">Executive</h3>
                     <div class="package-price">For large-scale events</div>
@@ -1250,7 +1567,6 @@
             </div>
         </div>
     </section>
-
     <!-- Testimonials -->
     <section class="testimonials" id="testimonials">
         <div class="container">
@@ -1259,7 +1575,6 @@
                 <h2 class="section-title">What Our Clients Say</h2>
                 <p class="section-subtitle">Don't just take our word for it. Here's what our satisfied clients have to say about our professional catering services.</p>
             </div>
-            
             <div class="testimonials-grid">
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-quote">
@@ -1279,7 +1594,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-quote">
                         "Our wedding was made even more special by Crown Shisha's elegant service. The attention to detail and professional presentation complemented our celebration perfectly. Highly recommended!"
@@ -1298,7 +1612,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-quote">
                         "Professional, reliable, and exceptional quality. Crown Shisha Catering has been our go-to for multiple events. Their team consistently delivers outstanding service that our guests always remember."
@@ -1320,7 +1633,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -1329,7 +1641,6 @@
                 <h2 class="section-title">Request Professional Consultation</h2>
                 <p class="section-subtitle">Ready to elevate your event? Contact our professional team for a customized quote and expert event planning consultation.</p>
             </div>
-            
             <div class="contact-grid">
                 <div class="contact-info fade-in">
                     <div class="contact-item">
@@ -1339,7 +1650,6 @@
                             <p>+1 (647) 906-9995<br>Available 24/7 for bookings</p>
                         </div>
                     </div>
-
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div class="contact-details">
@@ -1347,7 +1657,6 @@
                             <p>book@crownshisha.ca<br>Response within 2 hours</p>
                         </div>
                     </div>
-
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="contact-details">
@@ -1355,7 +1664,6 @@
                             <p>Greater Toronto Area (GTA)<br>& surrounding regions</p>
                         </div>
                     </div>
-
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div class="contact-details">
@@ -1364,7 +1672,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="contact-form fade-in">
                     <form id="contactForm">
                         <div class="form-row">
@@ -1377,7 +1684,6 @@
                                 <input type="text" id="lastName" name="lastName" required>
                             </div>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email">Email Address</label>
@@ -1388,7 +1694,6 @@
                                 <input type="tel" id="phone" name="phone" required>
                             </div>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="eventType">Event Type</label>
@@ -1407,24 +1712,20 @@
                                 <input type="date" id="eventDate" name="eventDate">
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label for="guestCount">Expected Guest Count</label>
                             <input type="number" id="guestCount" name="guestCount" placeholder="Number of guests" min="1">
                         </div>
-
                         <div class="form-group">
                             <label for="message">Event Details & Special Requirements</label>
                             <textarea id="message" name="message" placeholder="Please provide details about your event, venue, timing, and any specific requirements..." required></textarea>
                         </div>
-
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Request Professional Consultation</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -1444,7 +1745,6 @@
                         <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul class="footer-links">
@@ -1455,7 +1755,6 @@
                         <li><a href="#packages">Service Packages</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>Company</h4>
                     <ul class="footer-links">
@@ -1466,7 +1765,6 @@
                         <li><a href="#">Service Areas</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <ul class="footer-links">
@@ -1477,13 +1775,11 @@
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2025 Crown Shisha Catering. All rights reserved. Made by TYF Sadik | Licensed & Insured Professional Catering Services</p>
             </div>
         </div>
     </footer>
-
     <script>
         // Loading Screen
         window.addEventListener('load', () => {
@@ -1492,11 +1788,9 @@
                 loading.classList.add('hidden');
             }, 1200);
         });
-
         // Theme Toggle
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
-
         themeToggle.addEventListener('click', () => {
             if (body.getAttribute('data-theme') === 'light') {
                 body.removeAttribute('data-theme');
@@ -1506,24 +1800,20 @@
                 localStorage.setItem('theme', 'light');
             }
         });
-
         // Load saved theme
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'light') {
             body.setAttribute('data-theme', 'light');
         }
-
         // Mobile Menu
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navMenu = document.getElementById('navMenu');
-
         mobileMenuBtn.addEventListener('click', () => {
             navMenu.classList.toggle('active');
             const icon = mobileMenuBtn.querySelector('i');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
         });
-
         // Close mobile menu when clicking on link
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('click', () => {
@@ -1533,7 +1823,6 @@
                 icon.classList.remove('fa-times');
             });
         });
-
         // Smooth Scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -1547,13 +1836,11 @@
                 }
             });
         });
-
         // Scroll Animation Observer
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1561,61 +1848,46 @@
                 }
             });
         }, observerOptions);
-
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
-
         // Contact Form Enhancement
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
             // Get form data
             const formData = new FormData(this);
             const data = Object.fromEntries(formData);
-            
             // Create professional email content
             const subject = `Professional Consultation Request - ${data.eventType || 'Event'} Catering`;
             const body = `Dear Crown Shisha Catering Team,
-
 I am interested in your professional catering services for an upcoming event. Please find my details below:
-
 CLIENT INFORMATION:
 Name: ${data.firstName} ${data.lastName}
 Email: ${data.email}
 Phone: ${data.phone}
-
 EVENT DETAILS:
 Event Type: ${data.eventType}
 Preferred Date: ${data.eventDate || 'To be discussed'}
 Expected Guests: ${data.guestCount || 'To be confirmed'}
-
 ADDITIONAL INFORMATION:
 ${data.message}
-
 I would appreciate a professional consultation to discuss my requirements and receive a customized quote.
-
 Best regards,
 ${data.firstName} ${data.lastName}`;
-            
             // Open email client with professional format
             const encodedBody = encodeURIComponent(body);
             const encodedSubject = encodeURIComponent(subject);
             window.location.href = `mailto:bookcrownshisha@gmail.com?subject=${encodedSubject}&body=${encodedBody}`;
-            
             // Show professional confirmation message
             showNotification('Thank you for your inquiry! Your email client will open to send your professional consultation request.', 'success');
-            
             // Reset form
             this.reset();
         });
-
         // Header scroll effect with professional styling
         let lastScrollTop = 0;
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.header');
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
             if (scrollTop > 100) {
                 header.style.background = body.getAttribute('data-theme') === 'light' 
                     ? 'rgba(255, 255, 255, 0.98)' 
@@ -1629,22 +1901,18 @@ ${data.firstName} ${data.lastName}`;
                 header.style.backdropFilter = 'blur(15px)';
                 header.style.boxShadow = 'none';
             }
-            
             lastScrollTop = scrollTop;
         });
-
         // Enhanced service card interactions
         document.querySelectorAll('.service-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
                 card.style.transform = 'translateY(-12px)';
                 card.style.transition = 'all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
             });
-            
             card.addEventListener('mouseleave', () => {
                 card.style.transform = 'translateY(0)';
             });
         });
-
         // Professional notification system
         function showNotification(message, type = 'info') {
             // Remove any existing notifications
@@ -1652,7 +1920,6 @@ ${data.firstName} ${data.lastName}`;
             if (existingNotification) {
                 existingNotification.remove();
             }
-
             // Create notification element
             const notification = document.createElement('div');
             notification.className = `notification notification-${type}`;
@@ -1672,13 +1939,11 @@ ${data.firstName} ${data.lastName}`;
                 transition: transform 0.3s ease;
             `;
             notification.textContent = message;
-
             // Add to DOM and animate in
             document.body.appendChild(notification);
             setTimeout(() => {
                 notification.style.transform = 'translateX(0)';
             }, 100);
-
             // Remove after delay
             setTimeout(() => {
                 notification.style.transform = 'translateX(100%)';
@@ -1689,11 +1954,9 @@ ${data.firstName} ${data.lastName}`;
                 }, 300);
             }, 5000);
         }
-
         // Professional counter animation for trust indicators
         function animateCounters() {
             const counters = document.querySelectorAll('.trust-number');
-            
             counters.forEach(counter => {
                 const target = counter.textContent;
                 const numericValue = parseInt(target.replace(/\D/g, ''));
@@ -1711,7 +1974,6 @@ ${data.firstName} ${data.lastName}`;
                 }, 40);
             });
         }
-
         // Trigger counter animation when trust section is visible
         const trustSection = document.querySelector('.trust-section');
         if (trustSection) {
@@ -1723,32 +1985,25 @@ ${data.firstName} ${data.lastName}`;
                     }
                 });
             }, { threshold: 0.5 });
-            
             trustObserver.observe(trustSection);
         }
-
         // Enhanced form validation
         const form = document.getElementById('contactForm');
         const inputs = form.querySelectorAll('input, select, textarea');
-        
         inputs.forEach(input => {
             input.addEventListener('blur', validateField);
             input.addEventListener('input', clearValidationError);
         });
-
         function validateField(e) {
             const field = e.target;
             const value = field.value.trim();
-            
             // Remove existing error styling
             field.style.borderColor = '';
-            
             // Validate required fields
             if (field.hasAttribute('required') && !value) {
                 showFieldError(field, 'This field is required');
                 return false;
             }
-            
             // Validate email format
             if (field.type === 'email' && value) {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -1757,7 +2012,6 @@ ${data.firstName} ${data.lastName}`;
                     return false;
                 }
             }
-            
             // Validate phone format
             if (field.type === 'tel' && value) {
                 const phoneRegex = /^[\+]?[\d\s\-\(\)]{10,}$/;
@@ -1766,19 +2020,15 @@ ${data.firstName} ${data.lastName}`;
                     return false;
                 }
             }
-            
             return true;
         }
-
         function showFieldError(field, message) {
             field.style.borderColor = '#e74c3c';
-            
             // Remove existing error message
             const existingError = field.parentNode.querySelector('.field-error');
             if (existingError) {
                 existingError.remove();
             }
-            
             // Add new error message
             const errorElement = document.createElement('div');
             errorElement.className = 'field-error';
@@ -1791,17 +2041,14 @@ ${data.firstName} ${data.lastName}`;
             errorElement.textContent = message;
             field.parentNode.appendChild(errorElement);
         }
-
         function clearValidationError(e) {
             const field = e.target;
             field.style.borderColor = '';
-            
             const errorElement = field.parentNode.querySelector('.field-error');
             if (errorElement) {
                 errorElement.remove();
             }
         }
-
         // Professional page load performance optimization
         document.addEventListener('DOMContentLoaded', () => {
             // Optimize images loading
@@ -1809,50 +2056,42 @@ ${data.firstName} ${data.lastName}`;
             images.forEach(img => {
                 img.loading = 'lazy';
             });
-            
             // Initialize professional interactions
             initProfessionalAnimations();
         });
-
         function initProfessionalAnimations() {
             // Add subtle hover effects to buttons
             document.querySelectorAll('.btn').forEach(btn => {
                 btn.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateY(-2px)';
                 });
-                
                 btn.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0)';
                 });
             });
-            
             // Add professional card hover effects
-            document.querySelectorAll('.package-card, .testimonial-card').forEach(card => {
+            document.querySelectorAll('.package-card, .testimonial-card, .flavour-card').forEach(card => {
                 card.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateY(-5px)';
                     this.style.boxShadow = '0 15px 40px rgba(201, 169, 110, 0.15)';
                 });
-                
                 card.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0)';
                     this.style.boxShadow = '';
                 });
             });
         }
-
         // Professional date picker enhancement
         const dateInput = document.getElementById('eventDate');
         if (dateInput) {
             // Set minimum date to today
             const today = new Date().toISOString().split('T')[0];
             dateInput.min = today;
-            
             // Set maximum date to 1 year from now
             const maxDate = new Date();
             maxDate.setFullYear(maxDate.getFullYear() + 1);
             dateInput.max = maxDate.toISOString().split('T')[0];
         }
-
         // Professional scroll-to-top functionality
         window.addEventListener('scroll', () => {
             if (window.scrollY > 500) {
@@ -1861,7 +2100,6 @@ ${data.firstName} ${data.lastName}`;
                 hideScrollTopButton();
             }
         });
-
         function showScrollTopButton() {
             let scrollBtn = document.getElementById('scrollTopBtn');
             if (!scrollBtn) {
@@ -1884,27 +2122,22 @@ ${data.firstName} ${data.lastName}`;
                     transition: all 0.3s ease;
                     box-shadow: 0 5px 15px rgba(201, 169, 110, 0.3);
                 `;
-                
                 scrollBtn.addEventListener('click', () => {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 });
-                
                 scrollBtn.addEventListener('mouseenter', () => {
                     scrollBtn.style.transform = 'translateY(-3px)';
                     scrollBtn.style.boxShadow = '0 8px 25px rgba(201, 169, 110, 0.4)';
                 });
-                
                 scrollBtn.addEventListener('mouseleave', () => {
                     scrollBtn.style.transform = 'translateY(0)';
                     scrollBtn.style.boxShadow = '0 5px 15px rgba(201, 169, 110, 0.3)';
                 });
-                
                 document.body.appendChild(scrollBtn);
             }
             scrollBtn.style.opacity = '1';
             scrollBtn.style.visibility = 'visible';
         }
-
         function hideScrollTopButton() {
             const scrollBtn = document.getElementById('scrollTopBtn');
             if (scrollBtn) {
@@ -1912,6 +2145,26 @@ ${data.firstName} ${data.lastName}`;
                 scrollBtn.style.visibility = 'hidden';
             }
         }
+        // Flavour Tab Functionality
+        document.querySelectorAll('.flavour-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.flavour-tab').forEach(t => {
+                    t.classList.remove('active');
+                });
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all content
+                document.querySelectorAll('.flavour-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Show the selected content
+                const category = tab.getAttribute('data-category');
+                document.getElementById(`${category}-content`).classList.add('active');
+            });
+        });
     </script>
 </body>
 </html>
